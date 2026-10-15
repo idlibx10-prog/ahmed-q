@@ -1,0 +1,94 @@
+
+/* Anas Ahmad — elegant Islamic responsive refresh */
+:root{
+ --ans-bg:#030711;--ans-panel:#091629;--ans-panel-2:#0b1c34;
+ --ans-line:rgba(163,188,220,.16);--ans-gold:#c8aa68;--ans-gold-soft:#e1cca0;
+ --ans-text:#f4f1e9;--ans-muted:#aab7c9;--ans-blue:#17385f;
+}
+html{scroll-behavior:smooth;background:var(--ans-bg)}
+body{background:radial-gradient(ellipse at 50% -15%,rgba(22,52,91,.35),transparent 52%),var(--ans-bg)!important;color:var(--ans-text)!important;font-family:"Tajawal",system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c8aa68' stroke-width='.5'%3E%3Cpath d='M36 4 68 36 36 68 4 36Z M36 17 55 36 36 55 17 36Z M4 4 68 68 M68 4 4 68'/%3E%3C/g%3E%3C/svg%3E")}
+#site-header,.site-header{background:rgba(3,7,17,.88)!important;border-bottom:1px solid var(--ans-line)!important;backdrop-filter:blur(18px)}
+.header-inner{min-height:74px}
+.brand-name{color:var(--ans-text)!important;letter-spacing:.01em}
+.brand-orn,.brand i,.section-kicker,.eyebrow{color:var(--ans-gold)!important}
+.nav-link{transition:color .2s,background .2s}
+.nav-link:hover,.nav-link.active,.nav-link[aria-current="page"]{color:var(--ans-gold-soft)!important}
+main,.page{position:relative;z-index:1}
+.hero{isolation:isolate;border:1px solid var(--ans-line);border-radius:26px;overflow:hidden;background:linear-gradient(135deg,rgba(11,28,52,.94),rgba(3,7,17,.96) 70%)!important;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c8aa68' stroke-width='.7'%3E%3Cpath d='M50 2 98 50 50 98 2 50Z M50 20 80 50 50 80 20 50Z M2 2 98 98 M98 2 2 98'/%3E%3C/g%3E%3C/svg%3E")}
+.hero h1,.hero-title{color:var(--ans-text)!important;line-height:1.5;letter-spacing:-.025em}
+.hero p,.hero .subtitle{color:var(--ans-muted)!important;line-height:1.95}
+button,.btn,.button,[role="button"]{border-radius:14px;transition:transform .18s,background .18s,border-color .18s}
+button:active,.btn:active,.button:active{transform:scale(.98)}
+.btn-primary,.primary-btn,.hero .btn{background:linear-gradient(135deg,#c8aa68,#a88b4d)!important;color:#10131a!important;border:1px solid rgba(225,204,160,.35)!important;box-shadow:0 8px 24px rgba(200,170,104,.12)}
+.card,.tool-card,.feature-card,.surah-card,.adhkar-card,.stat-card,.content-card,.modal-content{background:linear-gradient(145deg,rgba(11,28,52,.94),rgba(6,14,27,.98))!important;border:1px solid var(--ans-line)!important;border-radius:18px!important;box-shadow:0 12px 32px rgba(0,0,0,.12)}
+.card:hover,.tool-card:hover,.feature-card:hover,.surah-card:hover{border-color:rgba(200,170,104,.4)!important}
+h1,h2,h3,h4{color:var(--ans-text)}
+p,.muted,.text-muted{color:var(--ans-muted)}
+input,textarea,select{background:#060f1e!important;color:var(--ans-text)!important;border:1px solid var(--ans-line)!important;border-radius:13px!important}
+input:focus,textarea:focus,select:focus{outline:1px solid rgba(200,170,104,.6)!important;border-color:var(--ans-gold)!important}
+footer{border-top:1px solid var(--ans-line)!important;color:var(--ans-muted)}
+.mobile-bottom-nav{display:none}
+@media(max-width:760px){
+ body{padding-bottom:calc(78px + env(safe-area-inset-bottom))!important}
+ #site-header,.site-header{position:sticky;top:0;z-index:100}
+ .header-inner{min-height:62px;padding-inline:16px}
+ .brand-logo{width:36px;height:36px;object-fit:contain}
+ main{padding-inline:14px}
+ .hero{border-radius:22px;margin:12px 0 22px;padding:24px 18px!important}
+ .hero h1,.hero-title{font-size:clamp(1.7rem,7vw,2.25rem)!important}
+ .hero p{font-size:.98rem}
+ .card,.tool-card,.feature-card,.surah-card,.adhkar-card,.stat-card,.content-card{border-radius:16px!important}
+ .mobile-bottom-nav{position:fixed;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;bottom:0;left:0;right:0;z-index:999;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(4,10,20,.94);border-top:1px solid rgba(200,170,104,.22);backdrop-filter:blur(22px);box-shadow:0 -10px 30px rgba(0,0,0,.24)}
+ .mobile-nav-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:48px;padding:5px 2px;border:0;background:transparent;color:#9eacc0;text-decoration:none;font:inherit;font-size:.7rem;white-space:nowrap}
+ .mobile-nav-link i{font-size:1.05rem}
+ .mobile-nav-link.is-current,.mobile-nav-link:focus-visible{color:var(--ans-gold-soft)}
+ .mobile-nav-link.is-current i{filter:drop-shadow(0 0 7px rgba(200,170,104,.28))}
+ .main-nav{display:none}
+ .menu-toggle{display:flex}
+}
+@media(min-width:761px){
+ .mobile-bottom-nav{display:none!important}
+ .hero{padding:clamp(32px,5vw,70px)!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+/* إضافات الورد والتعلّم ورفيق التلاوة */
+.guided-recitation-card{max-width:850px}.guided-surah{background:rgba(7,17,38,.55);border:1px solid rgba(212,175,55,.25);border-radius:18px;padding:24px;line-height:2.6;font-size:clamp(1.35rem,3vw,2rem);text-align:justify;margin:18px 0}.guided-word{display:inline;border-radius:6px;padding:2px 3px;transition:background .2s,color .2s}.guided-word.is-correct{color:#69e6a0;background:rgba(35,170,91,.13)}.guided-word.is-error{color:#ff7777;background:rgba(225,50,65,.15);text-decoration:underline wavy rgba(255,100,100,.7)}.vocab-card{padding:15px;border:1px solid rgba(212,175,55,.2);border-radius:12px;margin:12px 0}.feature-note{font-size:.85rem;opacity:.8}
+
+/* Guided recitation review states */
+.guided-word{display:inline-block;border-radius:.35rem;padding:.12rem .18rem;margin:.1rem;transition:background .2s,color .2s}.guided-word.is-correct{color:#65d69a;background:rgba(38,170,103,.12)}.guided-word.is-error{color:#ff7474;background:rgba(230,55,70,.12)}.guided-word.is-uncertain{color:#ffd27a;background:rgba(225,163,42,.13);text-decoration:underline dotted}.guided-word.is-skipped{color:var(--text-muted,#aaa)}
+
+
+/* Premium mushaf reader and live recitation feedback */
+.recitation-shell .guided-recitation-card{width:min(980px,96vw);max-height:92vh;overflow:auto;padding:clamp(16px,3vw,30px)}
+.mushaf-cover-scene{display:flex;justify-content:center;align-items:center;min-height:245px;padding:18px;perspective:1000px;background:radial-gradient(ellipse at center,rgba(199,160,74,.13),transparent 68%);overflow:hidden}
+.mushaf-book{position:relative;width:210px;height:245px;transform-style:preserve-3d;transform:rotateY(-13deg) rotateX(3deg);filter:drop-shadow(16px 18px 14px rgba(0,0,0,.42));transition:transform .5s}
+.mushaf-book:hover{transform:rotateY(-5deg) rotateX(1deg) translateY(-3px)}
+.mushaf-cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border:2px solid #c7a45b;border-radius:5px 12px 12px 5px;background:radial-gradient(ellipse at center,#172e48 0%,#091727 58%,#050b13 100%);box-shadow:inset 0 0 0 7px #0a1624,inset 0 0 0 9px #b9954f,inset 0 0 24px #02060a;color:#e9d19a;transform:translateZ(8px)}
+.mushaf-cover:before{content:"";position:absolute;inset:18px;border:1px solid rgba(221,187,111,.75);border-radius:3px;background:repeating-linear-gradient(45deg,transparent 0 11px,rgba(221,187,111,.07) 12px 13px);pointer-events:none}
+.cover-bismillah{font-family:"Amiri Quran","Aref Ruqaa",serif;font-size:35px;line-height:1.3}
+.cover-title{font-family:"Amiri Quran",serif;font-size:27px;text-shadow:0 1px 0 #000}
+.cover-subtitle{font-size:11px;letter-spacing:1px;color:#d0b879}
+.cover-ornament{font-size:20px;color:#c7a45b;letter-spacing:6px}
+.mushaf-pages{position:absolute;top:5px;bottom:5px;left:-11px;width:18px;transform:translateZ(-1px);background:repeating-linear-gradient(0deg,#e8ddc1 0 2px,#c5b58f 3px 4px);border-radius:3px 0 0 3px;box-shadow:inset 4px 0 4px #8c7954}
+.mushaf-toolbar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:14px 0}
+.mushaf-font-control{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-muted,#aaa)}
+.mushaf-page{padding:clamp(9px,2vw,18px);background:#171b20;border-radius:12px;box-shadow:0 12px 35px #0005}
+.mushaf-page-frame{position:relative;min-height:380px;padding:clamp(16px,3.4vw,34px);border:1px solid #b89a58;border-radius:3px;background:linear-gradient(90deg,#d7c9a4 0,#f4ecd7 3%,#f9f2df 50%,#f1e6cb 97%,#c5b184 100%);color:#182638;box-shadow:inset 0 0 0 5px #f2e7cc,inset 0 0 0 6px #bba066,0 4px 10px #0005}
+.mushaf-page-frame:before{content:"";position:absolute;inset:13px;border:1px solid rgba(145,113,52,.5);pointer-events:none}
+.mushaf-page-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 auto 22px;padding:7px 12px;border:1px solid #aa8b4e;border-radius:50px;text-align:center;font-family:"Amiri Quran","Aref Ruqaa",serif;font-size:18px;max-width:90%}
+.mushaf-page-heading small{font-family:"Tajawal",sans-serif;font-size:10px}
+.guided-surah{position:relative;z-index:1;text-align:justify;text-align-last:center;font-family:"Amiri Quran","Aref Ruqaa",serif;font-size:31px;line-height:2.25;word-spacing:2px;color:#182638;direction:rtl}
+.guided-word{display:inline;border-radius:4px;padding:1px 1px;transition:background .12s,color .12s}
+.guided-word.is-correct{color:#126b3a!important;background:#bce9c9!important;box-shadow:0 0 0 1px #61b47d}
+.guided-word.is-error{color:#a20d1a!important;background:#ffd5d8!important;box-shadow:0 0 0 1px #dc5a65;text-decoration:underline wavy #c32235}
+.guided-word.is-uncertain{color:#7c5200!important;background:#ffebae!important;box-shadow:0 0 0 1px #d8a632}
+.guided-word.is-current{color:#173d86!important;background:#cfe0ff!important;box-shadow:0 0 0 1px #7195d9}
+.ayah-end{display:inline-block;white-space:nowrap;font-family:"Amiri Quran",serif;font-size:.72em;color:#94753b;padding:0 4px}
+.mushaf-page-footer{text-align:center;color:#94753b;font-family:serif;margin-top:18px}
+.recitation-legend{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:12px 0;font-size:11px}
+.recitation-legend span{padding:5px 9px;border-radius:20px}.legend-green{background:#bce9c9;color:#126b3a}.legend-red{background:#ffd5d8;color:#a20d1a}.legend-yellow{background:#ffebae;color:#7c5200}
+.recitation-heard{margin:8px 0;padding:10px 12px;background:rgba(128,128,128,.09);border-radius:8px;overflow-wrap:anywhere;font-size:13px}
+#guided-progress{font-variant-numeric:tabular-nums}
+@media(max-width:600px){.mushaf-page-frame{min-height:330px;padding:18px 15px}.guided-surah{font-size:27px;line-height:2.15}.mushaf-toolbar{align-items:flex-start}.mushaf-font-control{width:100%}.mushaf-font-control input{flex:1}.mushaf-cover-scene{min-height:225px}.mushaf-book{transform:scale(.9) rotateY(-13deg)}}

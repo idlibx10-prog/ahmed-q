@@ -1,0 +1,76 @@
+.daily-plan{margin:1.25rem auto 0;padding:clamp(1rem,3vw,1.5rem);max-width:900px;border:1px solid rgba(215,182,107,.22);border-radius:24px;background:linear-gradient(135deg,rgba(11,28,52,.96),rgba(3,7,17,.9));box-shadow:0 18px 55px rgba(0,0,0,.18)}
+.daily-plan-head,.plan-actions,.plan-controls{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}.daily-plan h2{margin:.55rem 0;font-size:clamp(1.2rem,3vw,1.6rem)}.daily-plan p{line-height:1.8}.plan-controls{justify-content:flex-start;margin:1rem 0}.plan-controls label{font-weight:700}.plan-controls .feature-select{width:auto;min-width:120px}.plan-progress-track{height:9px;overflow:hidden;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(215,182,107,.16)}#plan-progress-fill{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#8f6a2d,#e5ca83);transition:width .35s cubic-bezier(.2,.8,.2,1)}#connection-status{font-size:.85rem}.is-online{color:#8bd7b0!important}.is-offline{color:#e7be72!important}.daily-plan .btn{min-height:42px}@media(max-width:560px){.daily-plan{border-radius:18px}.plan-controls{align-items:stretch}.plan-controls>*{flex:1}.plan-controls .feature-select{width:100%}.plan-actions{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){#plan-progress-fill{transition:none}}
+
+/* Premium horizontal intro and memorial dedication */
+.loader{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:clamp(16px,4vw,48px);background:radial-gradient(ellipse at 50% 0%,rgba(27,55,91,.55),transparent 58%),#030711;opacity:1;transition:opacity .65s ease,visibility .65s ease;overflow:auto}
+.loader.is-hiding{opacity:0;visibility:hidden;pointer-events:none}
+.loader-inner{width:100%;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.loader-brand{display:flex;align-items:center;gap:14px;color:#f7f0df;font-family:'Aref Ruqaa',serif;font-size:clamp(1.8rem,4vw,2.5rem)}
+.loader-logo{width:64px;height:64px;object-fit:contain;filter:drop-shadow(0 0 16px rgba(200,170,104,.18))}
+.loader-text{margin:0;color:#aab7c9;font-size:.95rem}
+.loader-progress-wrap{width:min(760px,88vw);margin:8px auto 0}
+.loader-progress-meta{display:flex;justify-content:space-between;align-items:center;color:#b8c3d2;font-size:.9rem;margin-bottom:10px}
+.loader-percent{color:#e5ca83;font-variant-numeric:tabular-nums}
+.loader-progress-track{height:7px;width:100%;overflow:hidden;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(200,170,104,.25);box-shadow:0 0 24px rgba(200,170,104,.08)}
+#loader-fill{display:block;width:1%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#8e6a2e,#e6ce8e);box-shadow:0 0 18px rgba(230,206,142,.35);transition:width .08s linear}
+.memorial-card{width:min(75vw,920px);min-height:min(60vh,560px);padding:clamp(24px,5vw,60px);margin:clamp(8px,2vh,24px) auto 0;border:1px solid rgba(214,184,116,.42);border-radius:28px;background:linear-gradient(145deg,rgba(13,31,55,.98),rgba(5,12,25,.98));box-shadow:0 30px 100px rgba(0,0,0,.42),inset 0 0 0 5px rgba(214,184,116,.035);animation:memorialRise .75s cubic-bezier(.2,.75,.2,1) both;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:clamp(10px,2vh,20px)}
+.memorial-card[hidden]{display:none!important}.memorial-ornament{font-size:2rem;color:#d6b874}.memorial-kicker{color:#d6b874!important;letter-spacing:.12em;margin:0}.memorial-card h2{font-family:'Aref Ruqaa','Amiri Quran',serif;font-size:clamp(1.7rem,3.6vw,2.8rem);line-height:1.5;color:#f5e7c4;margin:0}.memorial-prayer{max-width:720px;color:#f1eee7!important;font-family:'Amiri Quran',serif;font-size:clamp(1.1rem,2.2vw,1.55rem);line-height:2.15;margin:0}.memorial-divider{width:90px;height:1px;background:linear-gradient(90deg,transparent,#d6b874,transparent);margin:4px 0}.memorial-dedication{color:#b9c5d5!important;margin:0;line-height:1.9}.memorial-credit{display:flex;flex-direction:column;gap:4px;color:#e0c98f!important;margin:4px 0 0}.memorial-credit strong{letter-spacing:.14em;font-size:1.05rem}.memorial-credit span{color:#9eacc0;font-size:.9rem}
+@keyframes memorialRise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:700px){.loader{padding:16px}.loader-brand{font-size:1.8rem}.loader-logo{width:48px;height:48px}.loader-inner{gap:12px}.memorial-card{width:94vw;min-height:unset;padding:28px 20px;border-radius:22px;gap:12px}.memorial-prayer{line-height:1.95}.loader-progress-wrap{width:94vw}}
+
+
+/* Phase 2 — cinematic emerald memorial */
+.loader{background:radial-gradient(ellipse at 50% 8%,rgba(25,91,66,.25),transparent 52%),#050807}
+.loader-brand{color:#f7f5ee}
+.loader-text{color:#a9b9af}
+.loader-progress-meta{color:#bdc9c1}
+.loader-percent{color:#b8d8bd}
+.loader-progress-track{border-color:rgba(133,183,145,.26)}
+#loader-fill{background:linear-gradient(90deg,#174b37,#7ebc91);box-shadow:0 0 20px rgba(95,177,122,.25)}
+.memorial-card{position:relative;isolation:isolate;overflow:hidden;width:min(78vw,900px);max-height:calc(100dvh - 150px);overflow-y:auto;min-height:unset;padding:clamp(18px,3vh,34px) clamp(18px,4vw,48px);gap:clamp(8px,1.4vh,15px);border:1px solid rgba(139,190,151,.35);border-radius:30px;background:linear-gradient(145deg,rgba(13,28,22,.98),rgba(4,8,6,.99) 72%);box-shadow:0 32px 110px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.025),inset 0 0 40px rgba(36,105,69,.08)}
+.memorial-scene-glow{position:absolute;z-index:-1;inset:-35%;pointer-events:none;background:radial-gradient(ellipse at 50% 10%,rgba(68,151,95,.17),transparent 35%),radial-gradient(ellipse at 20% 70%,rgba(31,90,61,.1),transparent 30%);animation:memorialGlow 9s ease-in-out infinite alternate}
+.memorial-portrait-frame{width:clamp(130px,18vh,190px);height:clamp(130px,18vh,190px);padding:7px;border-radius:24px;background:linear-gradient(140deg,#b7d2b7,#275a40 28%,#101a13 55%,#8fb49a 78%,#213f2c);box-shadow:0 18px 42px rgba(0,0,0,.55),0 0 30px rgba(76,155,98,.16),inset 0 0 0 1px rgba(236,255,239,.24);transform:perspective(900px) rotateY(-5deg) rotateX(2deg);animation:memorialFrameFloat 5s ease-in-out infinite}
+.memorial-frame-inner{width:100%;height:100%;overflow:hidden;border-radius:18px;border:2px solid rgba(4,12,7,.95);background:#101710}
+.memorial-portrait{width:100%;height:100%;object-fit:cover;object-position:35% 25%;display:block;filter:saturate(.88) contrast(1.03)}
+.memorial-kicker{color:#9ccbaa!important;font-size:.86rem;letter-spacing:.04em;margin:0}
+.memorial-inna{font-family:'Amiri Quran','Amiri',serif;font-size:clamp(1.25rem,2.6vw,1.9rem);color:#f5f2e9!important;line-height:1.7;margin:0;text-shadow:0 3px 18px rgba(103,172,119,.16)}
+.memorial-audio-toggle{border:1px solid rgba(140,194,151,.28);border-radius:999px;background:rgba(31,76,48,.25);color:#c4e1ca;padding:8px 15px;font:inherit;font-size:.82rem;cursor:pointer;transition:background .2s,transform .2s}
+.memorial-audio-toggle:hover{background:rgba(50,111,70,.35);transform:translateY(-1px)}
+.memorial-card h2{color:#d9eadb;font-size:clamp(1.45rem,3vw,2.15rem);text-shadow:0 5px 25px rgba(0,0,0,.4)}
+.memorial-prayer{font-size:clamp(1rem,1.8vw,1.3rem);line-height:1.9;color:#e5ece5!important}
+.memorial-divider{background:linear-gradient(90deg,transparent,#8cba94,transparent);width:120px}
+.memorial-dedication{color:#afbeb1!important;font-size:.92rem}
+.memorial-credit{color:#c5dec9!important;font-size:.9rem}
+.memorial-credit span{color:#9caea0}
+.memorial-dismiss{border:1px solid rgba(145,197,154,.4);background:linear-gradient(135deg,#28583c,#153522);color:#f5f6f0;border-radius:999px;padding:11px 24px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .2s,filter .2s}
+.memorial-dismiss:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.memorial-card-out{animation:memorialExit .65s ease forwards!important}
+@keyframes memorialFrameFloat{0%,100%{transform:perspective(900px) rotateY(-5deg) rotateX(2deg) translateY(0)}50%{transform:perspective(900px) rotateY(4deg) rotateX(-1deg) translateY(-5px)}}
+@keyframes memorialGlow{from{transform:translate3d(-1%,0,0) scale(1)}to{transform:translate3d(1%,1%,0) scale(1.08)}}
+@keyframes memorialExit{to{opacity:0;transform:translateY(-10px) scale(.985);filter:blur(4px)}}
+@media(max-width:700px){.memorial-card{width:94vw;max-height:calc(100dvh - 115px);padding:16px 18px;gap:8px;border-radius:23px}.memorial-portrait-frame{width:clamp(112px,16vh,145px);height:clamp(112px,16vh,145px)}.memorial-prayer{line-height:1.7}.memorial-inna{font-size:1.25rem}.memorial-dismiss{padding:9px 20px}}
+@media(prefers-reduced-motion:reduce){.memorial-portrait-frame,.memorial-scene-glow{animation:none}}
+
+/* Memorial intro layout: after 100%, show only the tribute card centered. */
+#loader.memorial-mode{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;overflow-y:auto;padding:clamp(14px,3vh,32px);background:radial-gradient(ellipse at 50% 35%,rgba(21,91,65,.32),transparent 55%),rgba(3,8,6,.97)}
+#loader.memorial-mode .loader-inner{width:100%;max-width:1100px;min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;margin:auto}
+#loader.memorial-mode .loader-brand,#loader.memorial-mode .loader-text,#loader.memorial-mode .loader-progress-wrap{display:none!important}
+#loader.memorial-mode .memorial-card{margin:auto;flex:0 0 auto;width:min(860px,92vw);max-height:calc(100dvh - 36px);overflow-y:auto;opacity:0;animation:memorialCardAppear .9s cubic-bezier(.2,.75,.2,1) .08s forwards; transform:translateY(18px)}
+@keyframes memorialCardAppear{to{opacity:1;transform:translateY(0)}}
+#loader.memorial-mode.is-hiding .memorial-card{animation:memorialFadeOut .6s ease forwards!important}
+@media(max-width:700px){#loader.memorial-mode{padding:10px}#loader.memorial-mode .memorial-card{width:96vw;max-height:calc(100dvh - 20px);padding:16px 16px;gap:7px}}
+
+/* Final viewport-fit correction: keep the entire memorial card visible on short laptop screens. */
+#loader.memorial-mode{box-sizing:border-box;overflow:hidden;padding:12px;}
+#loader.memorial-mode .loader-inner{box-sizing:border-box;min-height:0;height:100%;justify-content:center;}
+#loader.memorial-mode .memorial-card{box-sizing:border-box;width:min(860px,92vw);max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px);min-height:0;margin:0 auto;padding:clamp(12px,2.2vh,24px) clamp(16px,3vw,36px);gap:clamp(5px,1vh,10px);overflow-y:auto;overscroll-behavior:contain;}
+#loader.memorial-mode .memorial-portrait-frame{width:clamp(76px,12vh,130px);height:clamp(76px,12vh,130px);padding:5px;border-radius:18px;}
+#loader.memorial-mode .memorial-frame-inner{border-radius:13px;}
+#loader.memorial-mode .memorial-inna{font-size:clamp(1.05rem,2.4vh,1.55rem);line-height:1.45;}
+#loader.memorial-mode .memorial-card h2{font-size:clamp(1.25rem,2.8vh,1.8rem);line-height:1.35;}
+#loader.memorial-mode .memorial-prayer{font-size:clamp(.92rem,1.9vh,1.15rem);line-height:1.65;}
+#loader.memorial-mode .memorial-kicker,#loader.memorial-mode .memorial-dedication,#loader.memorial-mode .memorial-credit{font-size:clamp(.76rem,1.55vh,.9rem);line-height:1.55;}
+#loader.memorial-mode .memorial-dismiss{padding:8px 18px;}
+@media(max-height:800px){#loader.memorial-mode .memorial-card{padding:10px 22px;gap:5px}#loader.memorial-mode .memorial-portrait-frame{width:clamp(68px,10vh,92px);height:clamp(68px,10vh,92px)}#loader.memorial-mode .memorial-divider{margin:1px 0}#loader.memorial-mode .memorial-prayer{line-height:1.5}}
+@media(max-width:700px){#loader.memorial-mode{padding:8px}#loader.memorial-mode .memorial-card{width:96vw;max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);padding:12px 14px;gap:6px}}

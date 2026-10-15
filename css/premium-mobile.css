@@ -1,0 +1,43 @@
+/* Premium navy redesign — layered over the existing site without replacing its functionality */
+:root{--navy-950:#030711;--navy-900:#061020;--navy-850:#09172b;--navy-800:#0b1c34;--navy-700:#123052;--gold:#d7b66b;--gold-soft:#f0d99b;--line:rgba(123,166,220,.2);--glass:rgba(8,23,43,.78);--text:#f4f5f8;--muted:#a9b8cc}
+html,body{background:radial-gradient(ellipse at 50% -15%,#142b4a 0%,#071326 38%,#030711 78%) fixed!important;color:var(--text)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.15;background-image:radial-gradient(#8ba6c8 .65px,transparent .65px);background-size:22px 22px}
+.glass,.glass-lg,.site-header,.player,.feature-card,.about-card,.ayah-card,.surah-card,.modal-card{background:linear-gradient(145deg,rgba(15,36,63,.88),rgba(4,13,27,.9))!important;border:1px solid var(--line)!important;box-shadow:0 16px 45px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.035)!important;backdrop-filter:blur(18px)}
+.site-header{border-radius:0 0 22px 22px!important;border-top:0!important}
+.brand-name,.section-title,h1,h2,h3{letter-spacing:.01em}
+.brand-name{color:#f3d99b!important}
+.brand-orn,.feature-icon,.about-icon{color:var(--gold)!important}
+.btn-light,.play-btn,.nav-link.active,.nav-link[aria-current=page]{background:linear-gradient(135deg,#e4c77e,#b68a3e)!important;color:#101522!important;border-color:transparent!important;box-shadow:0 6px 20px rgba(199,158,77,.17)}
+.btn-glass,.icon-btn,.feature-select,.feature-textarea,input,select,textarea{border-color:rgba(135,174,223,.24)!important;background-color:rgba(5,15,30,.76)!important;color:#f4f5f8!important}
+.muted,.feature-note{color:var(--muted)!important}
+.badge{background:rgba(215,182,107,.12)!important;border:1px solid rgba(215,182,107,.35)!important;color:#f0d99b!important}
+.feature-card,.about-card{border-radius:22px!important}
+.feature-card h3{color:#f0d99b}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #d7b66b!important;outline-offset:3px}
+.site-footer{border-top:1px solid var(--line)!important;background:linear-gradient(180deg,transparent,rgba(3,7,17,.88))!important;padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+.site-footer p{line-height:1.9}
+.player{border:1px solid rgba(215,182,107,.35)!important;border-radius:20px!important}
+.feature-modal{backdrop-filter:blur(12px);background:rgba(1,5,13,.78)!important}
+.feature-modal-card{border-radius:24px!important;border:1px solid rgba(215,182,107,.25)!important;max-height:min(86dvh,800px);overflow:auto}
+/* Mobile-first navigation and touch targets */
+@media(max-width:760px){
+ .site-header{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top)}
+ .header-inner{gap:10px;padding:10px 14px!important;flex-wrap:wrap}
+ .brand{min-width:0;gap:8px}.brand-name{font-size:1.12rem!important}.brand-logo{width:36px!important;height:36px!important}
+ .main-nav{display:flex!important;order:3;width:100%;gap:7px!important;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:4px 0 2px;white-space:nowrap;-webkit-overflow-scrolling:touch}
+ .main-nav::-webkit-scrollbar{display:none}.nav-link{flex:0 0 auto;min-height:40px;padding:9px 13px!important;border-radius:13px!important;font-size:.84rem!important}
+ .container{width:min(100% - 28px,620px)!important}
+ .page{padding-top:22px!important;padding-bottom:28px!important}
+ .section-title{font-size:clamp(1.45rem,6vw,2rem)!important;line-height:1.5}
+ .feature-grid,.features-grid,.names-grid,.reciter-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important}
+ .feature-card{padding:15px!important;min-width:0}.feature-card p{font-size:.9rem;line-height:1.8}
+ .feature-wide{grid-column:1/-1}
+ .btn,.feature-actions button{min-height:44px}
+ .player{left:10px!important;right:10px!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;width:auto!important;padding:10px 12px!important;gap:10px}
+ .player-info{min-width:0}.player-info strong,.player-info span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:40vw}
+ .quran-text,.quran-original{font-size:1.35rem!important;line-height:2.15!important}
+ .about-card{text-align:center;padding:24px 18px!important}
+ .site-footer{padding-left:18px;padding-right:18px}
+}
+@media(max-width:380px){.feature-grid,.features-grid,.names-grid,.reciter-grid{grid-template-columns:1fr!important}.header-inner{padding-inline:10px!important}.container{width:calc(100% - 20px)!important}.nav-link{padding-inline:10px!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
