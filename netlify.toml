@@ -1,0 +1,39 @@
+# ══════════════════════════════════════════════════════
+#  إعدادات النشر على Netlify — أنس أحمد
+#  صدقة جارية على روح أنس أحمد وأحمد فايز الأحمد
+# ══════════════════════════════════════════════════════
+
+[build]
+  # المشروع ملفات ثابتة فقط — لا حاجة لأي أمر بناء
+  publish = "."
+  command = ""
+
+# ── ترويسات التخزين المؤقت ──────────────────────────
+# 1) ملفات HTML: لا تُخزَّن طويلاً حتى تظهر التعديلات فوراً بعد النشر
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ── الأصول الثابتة: تخزين طويل لأنها لا تتغيّر ─────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

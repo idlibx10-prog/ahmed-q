@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>أُنس أحمد | القرآن الكريم والأذكار</title>
+  <meta name="description" content="أُنس أحمد - ملاذك الروحي للقرآن الكريم والأذكار والمساعد الذكي">
+  <meta name="theme-color" content="#050807">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:title" content="أُنس أحمد - القرآن الكريم والأذكار">
+  <meta property="og:description" content="أُنس أحمد - ملاذك الروحي للقرآن الكريم والأذكار والمساعد الذكي">
+  <meta name="twitter:card" content="summary">
+  <!-- بعد النشر: استبدل هذا السطر بعنوان موقعك الكامل -->
+  <meta property="og:image" content="assets/logo.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri+Quran&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/advanced.css">
+  <link rel="stylesheet" href="css/premium-mobile.css">
+  <link rel="stylesheet" href="css/polish-v2.css">
+  <link rel="stylesheet" href="css/phase-completion.css">
+  <link rel="stylesheet" href="css/ans-elegant-redesign.css">
+  <link rel="stylesheet" href="css/luxury-refresh.css">
+  <link rel="stylesheet" href="css/nawawi.css">
+  <link rel="stylesheet" href="css/phase1-ux-refresh.css">
+  <link rel="stylesheet" href="css/phase2-backup.css">
+  <link rel="stylesheet" href="css/user-requested-fixes.css">
+
+  <!-- شاشة التحميل: لا تُزل البطاقة بسبب خطأ في ملف غير متعلق بها. -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('loading');
+      window.addEventListener('error', function (event) {
+        if (event && event.target && event.target.tagName) return;
+        try { console.error('[Uns Ahmad]', event && (event.message || event.error || event)); } catch (_) {}
+      });
+    })();
+  </script>
+  <noscript><style>#loader{display:none!important}html.loading,html.loading body{overflow:auto!important}html.loading body>:not(#loader){visibility:visible!important}</style></noscript>
+</head>
+<body>
+  <!-- ═════════ شاشة التحميل ═════════ -->
+  <div class="loader" id="loader" role="status" aria-label="جارٍ التحميل">
+    <div class="loader-inner">
+      <div class="loader-brand"><img class="loader-logo" src="assets/logo.png" width="72" height="72" alt="" decoding="async"><span>أُنس أحمد</span></div>
+      <p class="loader-text">تهيئة مساحة للسكينة والذكر</p>
+      <div class="loader-progress-wrap"><div class="loader-progress-meta"><span>جارٍ تجهيز الموقع</span><strong class="loader-percent" id="loader-percent">1%</strong></div><div class="loader-progress-track" id="loader-bar" role="progressbar" aria-label="نسبة التحميل" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1"><span id="loader-fill"></span></div></div>
+      <article class="memorial-card" id="memorial-card" aria-label="دعاء للمرحوم أحمد فايز الأحمد" hidden>
+        <div class="memorial-scene-glow" aria-hidden="true"></div>
+        <div class="memorial-portrait-frame">
+          <div class="memorial-frame-inner">
+            <img class="memorial-portrait" src="assets/ahmad-fayez.jpg" alt="صورة أحمد فايز الأحمد رحمه الله" decoding="async">
+          </div>
+        </div>
+        <p class="memorial-kicker">ذِكرٌ طيّب ودعاءٌ لا ينقطع</p>
+        <p class="memorial-inna">إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</p>
+        <button type="button" class="memorial-audio-toggle" id="memorial-audio-toggle" aria-pressed="false"><i class="fa-solid fa-volume-high" aria-hidden="true"></i> تشغيل التلاوة</button>
+        <audio id="memorial-audio" preload="auto" src="https://everyayah.com/data/Alafasy_128kbps/002156.mp3"></audio>
+        <div class="memorial-divider"></div>
+        <h2>اللهم ارحم أحمد فايز الأحمد</h2>
+        <p class="memorial-prayer">اللهم اغفر له وارحمه، وعافه واعفُ عنه، وأكرم نزله، ووسّع مدخله، واجعل قبره روضةً من رياض الجنة، ونوّر له فيه، واجمعه بمن يحب في جنات النعيم.</p>
+        <p class="memorial-dedication">اللهم اجعل هذا العمل بابَ خيرٍ ودعاءٍ يصل إليه، وتقبّله بواسع رحمتك.</p>
+        <p class="memorial-credit">تطوير <strong>MOOHAMED</strong><span>وفاءً لخالي أحمد فايز الأحمد، رحمه الله وأسكنه فسيح جناته</span></p>
+        <button type="button" class="memorial-dismiss" id="memorial-dismiss">الدخول إلى الموقع <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+      </article>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- ═════════ Header ═════════ -->
+  <header class="site-header glass" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand" data-nav="home" aria-label="أنس أحمد — الرئيسية">
+        <span class="brand-name"><i class="fa-solid fa-star-and-crescent brand-orn" aria-hidden="true"></i>أنس أحمد</span>
+        <!-- اللوجو في شريط التنقل (44px) -->
+        <img class="brand-logo" src="assets/logo.png" width="44" height="44" alt="" decoding="async">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#home"   data-nav="home"   class="nav-link">الرئيسية</a>
+        <a href="#quran"  data-nav="quran"  class="nav-link">استمع للقرآن</a>
+        <a href="#recitation" data-nav="recitation" class="nav-link">قراءة القرآن</a>
+        <a href="#adhkar" data-nav="adhkar" class="nav-link">الأذكار</a>
+        <a href="#taj-adhikr" data-nav="taj-adhikr" class="nav-link">تيجان الذكر</a>
+        <a href="#nawawi" data-nav="nawawi" class="nav-link">الأربعون النبوية</a>
+        <button type="button" class="nav-link nav-btn" id="open-ai-nav">المساعد</button>
+        <a href="#tools" data-nav="tools" class="nav-link">الأدوات</a>
+        <a href="#about"  data-nav="about"  class="nav-link">حول</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle"
+              aria-label="فتح القائمة" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═════════ 1) الرئيسية ═════════ -->
+    <section class="page is-active" id="home" data-page="home" aria-labelledby="hero-title">
+      <div class="hero">
+        <div class="hero-orb" aria-hidden="true">
+          <i class="fa-solid fa-mosque"></i>
+        </div>
+        <h1 class="hero-title" id="hero-title">وَأَنِ اسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ</h1>
+        <p class="hero-sub">ملاذك الآمن للقرآن الكريم، الأذكار، ورفيقك الروحي</p>
+        <div class="hero-actions">
+          <a href="#quran" data-nav="quran" class="btn btn-light">
+            <i class="fa-solid fa-book-quran"></i> تصفح القرآن الكريم
+          </a>
+          <button type="button" class="btn btn-glass" id="open-ai-hero">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> اسأل المساعد الذكي
+          </button>
+        </div>
+        <div class="daily-ayah glass-lg" id="daily-ayah">
+          <span class="feature-eyebrow"><i class="fa-solid fa-sparkles"></i> آية اليوم</span>
+          <p id="daily-ayah-text" class="daily-ayah-text">إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+          <p id="daily-ayah-ref" class="muted">سورة الشرح · ٦</p>
+          <div class="feature-actions"><button class="btn btn-glass btn-sm" id="daily-ayah-share"><i class="fa-solid fa-share-nodes"></i> مشاركة</button><button class="btn btn-glass btn-sm" id="daily-ayah-read"><i class="fa-solid fa-book-open"></i> اقرأ القرآن</button></div>
+        </div>
+        <article class="daily-plan glass-lg" aria-labelledby="daily-plan-title">
+          <div class="daily-plan-head"><span class="feature-eyebrow"><i class="fa-solid fa-calendar-check"></i> رفيق القرآن</span><span id="plan-date" class="muted"></span></div>
+          <h2 id="daily-plan-title">وردك اليومي</h2>
+          <p class="muted">ابدأ بالقليل وداوم عليه. اختر هدفاً مناسباً لك، وسنحفظ تقدمك على هذا الجهاز.</p>
+          <div class="plan-controls"><label for="daily-goal">هدفي اليومي</label><select id="daily-goal" class="feature-select"><option value="5">5 آيات</option><option value="10" selected>10 آيات</option><option value="20">20 آية</option><option value="40">40 آية</option></select><button type="button" class="btn btn-light btn-sm" id="plan-progress-add">سجّل إنجاز اليوم</button></div>
+          <div class="plan-progress-track" role="progressbar" aria-label="تقدم الورد اليومي" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="plan-progress-bar"><span id="plan-progress-fill"></span></div>
+          <p id="plan-progress-label" class="muted" aria-live="polite">0 من 10 آيات اليوم</p>
+          <div class="plan-actions"><button type="button" class="btn btn-glass btn-sm" id="pwa-install" hidden><i class="fa-solid fa-download"></i> تثبيت الموقع</button><span id="connection-status" class="muted" role="status">جارٍ فحص الاتصال…</span></div>
+        </article>
+        <!-- يملؤه quran.js تلقائياً عند وجود آخر قراءة محفوظة -->
+        <a href="#quran" class="resume-chip glass" id="resume-chip" data-nav="quran" hidden>
+          <i class="fa-solid fa-bookmark"></i>
+          <span id="resume-text"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═════════ 2) القرآن ═════════ -->
+    <section class="page" id="quran" data-page="quran" aria-labelledby="quran-title">
+      <div class="container">
+
+        <!-- شاشة 1: قائمة السور -->
+        <div id="surah-list-screen">
+          <h2 class="section-title" id="quran-title">القرآن الكريم</h2>
+          <div class="search-box glass">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input type="search" id="surah-search" placeholder="ابحث باسم السورة أو رقمها"
+                   aria-label="ابحث عن سورة" autocomplete="off">
+          </div>
+          <div class="surah-grid" id="surah-grid" aria-live="polite">
+            <p class="state-msg">جارٍ تحميل السور…</p>
+          </div>
+        </div>
+
+        <!-- شاشة 2: عرض السورة -->
+        <div id="surah-view-screen" hidden>
+          <button type="button" class="btn btn-glass btn-sm" id="back-to-list">
+            <i class="fa-solid fa-arrow-right"></i> عودة للقائمة
+          </button>
+          <h2 class="surah-heading" id="surah-heading"></h2>
+          <p class="surah-meta" id="surah-meta"></p>
+          <div class="quran-toolbar glass" id="quran-toolbar">
+            <button type="button" class="btn btn-glass btn-sm" id="choose-reciter"><i class="fa-solid fa-microphone-lines"></i> اختر القارئ</button>
+            <button type="button" class="btn btn-glass btn-sm" id="quran-stop"><i class="fa-solid fa-stop"></i> إيقاف القرآن</button>
+            <button type="button" class="btn btn-light btn-sm" id="quran-resume"><i class="fa-solid fa-play"></i> متابعة من حيث توقفت</button>
+            <button type="button" class="btn btn-light btn-sm" id="play-full-surah"><i class="fa-solid fa-play"></i> تشغيل السورة كاملة</button>
+            <button type="button" class="btn btn-glass btn-sm" id="playlist-add-surah"><i class="fa-solid fa-list-check"></i> أضف لقائمة الاستماع</button>
+            <label class="speed-control">السرعة <select id="quran-speed"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+            <label class="speed-control"><input type="checkbox" id="quran-loop"> تكرار السورة</label>
+          </div>
+          <div id="reciter-current-label" class="muted reciter-current-label">القارئ: مشاري راشد العفاسي</div>
+          <p class="basmala" id="basmala" hidden>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+          <div class="ayah-list" id="ayah-list"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═════════ 3) الأذكار ═════════ -->
+    <section class="page" id="adhkar" data-page="adhkar" aria-labelledby="adhkar-title">
+      <div class="container">
+
+        <div id="adhkar-cats-screen">
+          <h2 class="section-title" id="adhkar-title">الأذكار</h2>
+          <div class="cat-grid" id="cat-grid">
+            <button type="button" class="cat-card glass" data-cat="morning"><span class="cat-icon"><i class="fa-solid fa-sun"></i></span><span>أذكار الصباح</span></button>
+            <button type="button" class="cat-card glass" data-cat="evening"><span class="cat-icon"><i class="fa-solid fa-moon"></i></span><span>أذكار المساء</span></button>
+            <button type="button" class="cat-card glass" data-cat="sleep"><span class="cat-icon"><i class="fa-solid fa-bed"></i></span><span>أذكار النوم</span></button>
+            <button type="button" class="cat-card glass" data-cat="wakeup"><span class="cat-icon"><i class="fa-solid fa-cloud-sun"></i></span><span>أذكار الاستيقاظ</span></button>
+            <button type="button" class="cat-card glass" data-cat="after-prayer"><span class="cat-icon"><i class="fa-solid fa-hands-praying"></i></span><span>أذكار بعد الصلاة</span></button>
+            <button type="button" class="cat-card glass" data-cat="adhan"><span class="cat-icon"><i class="fa-solid fa-bullhorn"></i></span><span>أذكار الأذان</span></button>
+            <button type="button" class="cat-card glass" data-cat="istikhara"><span class="cat-icon"><i class="fa-solid fa-compass"></i></span><span>دعاء الاستخارة</span></button>
+            <button type="button" class="cat-card glass" data-cat="qunut"><span class="cat-icon"><i class="fa-solid fa-hands"></i></span><span>دعاء القنوت</span></button>
+            <button type="button" class="cat-card glass" data-cat="mosque"><span class="cat-icon"><i class="fa-solid fa-mosque"></i></span><span>أذكار المسجد</span></button>
+            <button type="button" class="cat-card glass" data-cat="tasbih"><span class="cat-icon"><i class="fa-solid fa-circle-dot"></i></span><span>التسابيح</span></button>
+            <button type="button" class="cat-card glass" data-cat="prayer-duas"><span class="cat-icon"><i class="fa-solid fa-person-praying"></i></span><span>أدعية الصلاة</span></button>
+          </div>
+        </div>
+
+        <div id="adhkar-list-screen" hidden>
+          <div class="adhkar-bar">
+            <button type="button" class="btn btn-glass btn-sm" id="adhkar-back">
+              <i class="fa-solid fa-arrow-right"></i> الأقسام
+            </button>
+            <button type="button" class="btn btn-glass btn-sm" id="adhkar-reset" hidden>
+              <i class="fa-solid fa-rotate-right"></i> إعادة العدّ
+            </button>
+          </div>
+          <h2 class="section-title" id="adhkar-cat-title"></h2>
+          <div class="dhikr-list" id="dhikr-list"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- صفحة مستقلة لقراءة القرآن والتدريب -->
+    <section class="page" id="recitation" data-page="recitation" aria-labelledby="recitation-page-title">
+      <div class="container narrow recitation-page-wrap">
+        <div class="recitation-page-hero glass-lg">
+          <span class="eyebrow"><i class="fa-solid fa-book-open" aria-hidden="true"></i> مساحة التلاوة</span>
+          <h2 class="section-title" id="recitation-page-title">اقرأ القرآن على مهل</h2>
+          <p class="section-subtitle">افتح المصحف، اختر السورة، وابدأ القراءة. ستظهر نتائج التعرّف الصوتي عند نجاح الاتصال بخدمة التصحيح.</p>
+          <div class="recitation-feature-points"><span><i class="fa-solid fa-book-quran"></i> مصحف واضح</span><span><i class="fa-solid fa-microphone"></i> قراءة بالميكروفون</span><span><i class="fa-solid fa-highlighter"></i> متابعة الكلمات</span></div>
+          <button class="btn btn-light" id="open-guided-recitation"><i class="fa-solid fa-book-open-reader"></i> افتح المصحف وابدأ القراءة</button>
+          <p class="feature-note">التعرّف الصوتي أداة مساعدة تعليمية، وقد يخطئ بحسب جودة الصوت والاتصال. راجع القراءة مع معلّم متقن.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ صفحة تيجان الذكر ═════════ -->
+    <section class="page" id="taj-adhikr" data-page="taj-adhikr" aria-labelledby="taj-title">
+      <div class="container taj-container">
+        <div class="taj-hero glass-lg">
+          <span class="taj-kicker"><i class="fa-solid fa-gem"></i> وَلَا تَغْفُلْ عَنِ الذِّكْر</span>
+          <h2 class="section-title" id="taj-title">تيجان الذكر</h2>
+          <p class="section-subtitle">اختر ذكرك، وردّده بقلب حاضر. عدّاد هادئ يحفظ تقدّمك على هذا الجهاز.</p>
+        </div>
+        <div class="taj-layout">
+          <article class="taj-counter-card glass-lg">
+            <label class="field-label" for="taj-dhikr-select">اختر الذكر</label>
+            <select id="taj-dhikr-select" class="feature-select">
+              <option value="سبحان الله">سُبْحَانَ اللَّهِ</option>
+              <option value="الحمد لله">الْحَمْدُ لِلَّهِ</option>
+              <option value="الله أكبر">اللَّهُ أَكْبَرُ</option>
+              <option value="لا إله إلا الله">لَا إِلَٰهَ إِلَّا اللَّهُ</option>
+              <option value="أستغفر الله">أَسْتَغْفِرُ اللَّهَ</option>
+              <option value="سبحان الله وبحمده">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</option>
+              <option value="لا حول ولا قوة إلا بالله">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ</option>
+              <option value="اللهم صل وسلم على نبينا محمد">اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد</option>
+            </select>
+            <div class="taj-ring" aria-live="polite"><div class="taj-ring-inner"><span id="taj-count">0</span><small>من <span id="taj-target-label">33</span></small></div></div>
+            <button type="button" id="taj-count-btn" class="btn btn-light taj-main-btn"><i class="fa-solid fa-fingerprint"></i> سبّح</button>
+            <div class="taj-actions"><label for="taj-target" class="field-label">هدف الجولة</label><select id="taj-target" class="feature-select"><option value="33">33 مرة</option><option value="100">100 مرة</option><option value="10">10 مرات</option></select><button type="button" id="taj-reset" class="btn btn-glass btn-sm">إعادة الجولة</button></div>
+            <p id="taj-status" class="taj-status" aria-live="polite">ابدأ على مهل، ولكل تسبيحة أجرها بإذن الله.</p>
+          </article>
+          <aside class="taj-side">
+            <article class="taj-note glass-lg"><i class="fa-solid fa-heart"></i><h3>ذكرٌ بحضور القلب</h3><p>ليس المقصود كثرة العدد وحدها؛ خذ لحظة لتستحضر معنى ما تقول، دون استعجال أو ضغط.</p></article>
+            <article class="taj-note glass-lg"><i class="fa-solid fa-book-open"></i><h3>أذكار مختارة</h3><p>سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر، ولا حول ولا قوة إلا بالله.</p></article>
+            <article class="taj-note glass-lg"><i class="fa-solid fa-floppy-disk"></i><h3>حفظ تلقائي</h3><p>يُحفظ عدّاد كل ذكر على هذا الجهاز، ويمكنك تغيير الذكر متى شئت.</p></article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ صفحة الأربعون النبوية ═════════ -->
+    <section class="page" id="nawawi" data-page="nawawi" aria-labelledby="nawawi-title">
+      <div class="container nawawi-container">
+        <div class="nawawi-hero glass-lg">
+          <span class="nawawi-kicker"><i class="fa-solid fa-book-open"></i> من جوامع الكلم</span>
+          <h2 class="section-title" id="nawawi-title">الأربعون النبوية</h2>
+          <p class="section-subtitle">متن الإمام النووي رحمه الله، اقرأ، وتأمل الفوائد، واكتب ملاحظاتك، أو فعّل وضع الحفظ لاختبار ذاكرتك.</p>
+          <div class="nawawi-stats"><span><strong id="nawawi-total">42</strong> حديثًا</span><span><strong id="nawawi-visible">42</strong> معروضًا</span><span><strong id="nawawi-read-count">0</strong> تمت مراجعتها</span><span>تُحفظ الملاحظات والمفضلة على جهازك</span></div>
+        </div>
+        <div class="nawawi-controls glass-lg">
+          <label class="sr-only" for="nawawi-search">ابحث في الأحاديث</label>
+          <div class="nawawi-search-wrap"><i class="fa-solid fa-magnifying-glass"></i><input id="nawawi-search" type="search" placeholder="ابحث برقم الحديث أو عنوانه أو كلماته…" autocomplete="off"></div>
+          <div class="nawawi-filter-row"><button type="button" class="btn btn-light btn-sm is-selected" data-hadith-filter="all">كل الأحاديث</button><button type="button" class="btn btn-glass btn-sm" data-hadith-filter="favorites"><i class="fa-regular fa-bookmark"></i> المفضلة</button><button type="button" class="btn btn-glass btn-sm" id="nawawi-clear">مسح البحث</button><button type="button" class="btn btn-glass btn-sm" id="nawawi-memorize-toggle" aria-pressed="false"><i class="fa-solid fa-brain"></i> وضع الحفظ</button></div>
+        </div>
+        <section class="nawawi-plan glass-lg" aria-labelledby="nawawi-plan-title">
+          <div class="nawawi-plan-head"><span class="nawawi-kicker"><i class="fa-solid fa-calendar-check"></i> خطة ثابتة بلا ضغط</span><h3 id="nawawi-plan-title">خطة حفظ ومراجعة يومية</h3><p class="muted">اختر عدد الأحاديث التي تريد حفظها يوميًا، وسجّل إنجازك. يُحفظ التقدم على هذا الجهاز.</p></div>
+          <div class="nawawi-plan-controls"><label for="nawawi-daily-goal">هدفي اليومي</label><select id="nawawi-daily-goal" class="feature-select"><option value="1">حديث واحد</option><option value="2" selected>حديثان</option><option value="3">3 أحاديث</option><option value="4">4 أحاديث</option><option value="5">5 أحاديث</option></select><button type="button" class="btn btn-light btn-sm" id="nawawi-plan-reset">إعادة إنجاز اليوم</button></div>
+          <div class="nawawi-plan-progress"><div class="nawawi-plan-progress-label"><span>إنجاز اليوم</span><strong id="nawawi-plan-count">0 / 2</strong></div><div class="nawawi-plan-track"><span id="nawawi-plan-bar"></span></div><p id="nawawi-plan-message" class="muted" aria-live="polite">ابدأ بحديث واحد، فالدوام أهم من الكثرة.</p></div>
+          <div class="nawawi-plan-actions"><button type="button" class="btn btn-light" id="nawawi-plan-done"><i class="fa-solid fa-check"></i> أتممت جلسة حفظ</button><span class="muted">أيام الإنجاز المتتالية: <strong id="nawawi-plan-streak">0</strong></span></div>
+        </section>
+        <div id="nawawi-list" class="nawawi-list" aria-live="polite"></div>
+        <p class="nawawi-source">النصوص المعروضة مختارات من متن الأربعين النووية. أضيف حديثان بعد الأربعين في النسخة المشهورة، لذلك يبلغ مجموعها 42 حديثًا. <a href="https://sunnah.com/forty" target="_blank" rel="noopener noreferrer">راجع مجموعة الأربعين على Sunnah.com</a> · <a href="https://www.al-adkar.com/hadith/40-nawawiyah" target="_blank" rel="noopener noreferrer">النص والتخريج</a></p>
+      </div>
+    </section>
+
+    <!-- ═════════ الأدوات المستقلة/الإضافية ═════════ -->
+    <section class="page" id="tools" data-page="tools" aria-labelledby="tools-title">
+      <div class="container">
+        <h2 class="section-title" id="tools-title">رفيقك اليومي</h2>
+        <p class="section-subtitle">أدوات إيمانية إضافية، تحفظ تفضيلاتك على هذا الجهاز.</p>
+        <article class="backup-card glass-lg" aria-labelledby="backup-title">
+          <div class="feature-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></div>
+          <h3 id="backup-title">نسخة احتياطية لبياناتك</h3>
+          <p>احفظ تقدمك وتفضيلاتك المحفوظة على هذا الجهاز في ملف خاص، أو استعدها لاحقاً عند تغيير الجهاز أو المتصفح. لا تُرسل بياناتك إلى أي خادم.</p>
+          <div class="backup-actions">
+            <button type="button" class="btn btn-light" id="backup-export"><i class="fa-solid fa-download" aria-hidden="true"></i> تنزيل نسخة احتياطية</button>
+            <button type="button" class="btn btn-glass" id="backup-import-trigger"><i class="fa-solid fa-upload" aria-hidden="true"></i> استعادة من ملف</button>
+            <input type="file" id="backup-file" accept=".json,application/json" hidden>
+            <button type="button" class="btn btn-glass" id="backup-reload" hidden><i class="fa-solid fa-rotate" aria-hidden="true"></i> إعادة تحميل الموقع</button>
+          </div>
+          <p class="backup-status" id="backup-status" role="status" aria-live="polite">أنشئ نسخة احتياطية قبل حذف بيانات المتصفح أو الانتقال إلى جهاز آخر.</p>
+          <p class="backup-note">ملاحظة: تُصدّر الأداة مفاتيح التخزين المعروفة للموقع فقط. احتفظ بملف النسخة الاحتياطية في مكان آمن.</p>
+        </article>
+        <div class="feature-grid">
+          <article class="feature-card glass-lg"><div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>هدف الورد اليومي</h3><p class="muted">تابع هدفك اليومي الحالي وعدّ الآيات التي أنجزتها.</p><button class="btn btn-glass btn-sm" data-nav="home">الذهاب إلى الورد</button></article>
+          <article class="feature-card glass-lg"><div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div><h3>بطاقات مفردات القرآن</h3><p class="muted">تعلّم معاني كلمات قرآنية قصيرة وراجعها على دفعات.</p><div id="vocab-card" class="vocab-card"><strong id="vocab-word">الصمد</strong><p id="vocab-meaning" hidden>السيد الكامل الذي يُقصَد إليه في الحوائج.</p></div><button class="btn btn-light btn-sm" id="vocab-reveal">إظهار المعنى</button><button class="btn btn-glass btn-sm" id="vocab-next">كلمة أخرى</button></article>
+          <article class="feature-card glass-lg"><div class="feature-icon"><i class="fa-solid fa-calendar-days"></i></div><h3>التاريخ والمواسم</h3><p class="muted">التاريخ الميلادي: <strong id="gregorian-today"></strong></p><p class="muted">التاريخ الهجري يعتمد على التقويم المختار وقد يختلف حسب الرؤية المحلية.</p><button class="btn btn-glass btn-sm" id="season-reminder">تذكير بالمواسم</button><p id="season-note" class="muted" aria-live="polite"></p></article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-circle-dot"></i></div><h3>السبحة الإلكترونية</h3>
+            <label class="field-label" for="tasbeeh-dhikr">اختر الذكر</label>
+            <select id="tasbeeh-dhikr" class="feature-select"><option>سبحان الله</option><option>الحمد لله</option><option>الله أكبر</option><option>لا إله إلا الله</option><option>أستغفر الله</option></select>
+            <button class="tasbeeh-counter" id="tasbeeh-tap" aria-label="زيادة عداد التسبيح"><span id="tasbeeh-count">0</span><small>اضغط للتسبيح</small></button>
+            <div class="feature-actions"><button class="btn btn-glass btn-sm" id="tasbeeh-reset">إعادة التعيين</button><span class="muted" id="tasbeeh-total"></span></div>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-moon"></i></div><h3>المظهر</h3><p class="muted">بدّل بين المظهر الليلي الفاخر والمظهر النهاري الهادئ.</p>
+            <button class="btn btn-light" id="theme-toggle"><i class="fa-solid fa-sun"></i> تبديل المظهر</button>
+            <p class="muted" id="theme-label">المظهر الليلي</p>
+          </article>
+          <article class="feature-card glass-lg feature-wide">
+            <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div><h3>بحث في القرآن الكريم</h3>
+            <form id="quran-global-search" class="feature-search"><input id="quran-search-word" type="search" placeholder="ابحث عن كلمة أو عبارة في القرآن" required><button class="btn btn-light" type="submit">بحث</button></form>
+            <div id="quran-search-results" class="feature-results" aria-live="polite"></div>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-clock"></i></div><h3>مواقيت الصلاة</h3><p class="muted">اسمح بالوصول إلى موقعك لحساب المواقيت المحلية.</p>
+            <button class="btn btn-glass btn-sm" id="prayer-locate">تحديد موقعي وحساب المواقيت</button><p id="prayer-status" class="muted" aria-live="polite">لم يتم تحديد الموقع.</p><div id="prayer-times-list" class="prayer-times"></div>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-compass"></i></div><h3>اتجاه القبلة</h3><p class="muted">احسب اتجاه القبلة من موقعك. قد تحتاج البوصلة إلى دعم المستشعر وإذن إضافي على iPhone.</p><button class="btn btn-glass btn-sm" id="qibla-calc">حساب اتجاه القبلة</button><div class="qibla-dial"><div id="qibla-needle">▲</div></div><p id="qibla-status" class="muted">بانتظار تحديد الموقع.</p>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-volume-high"></i></div><h3>استمع إلى الذكر</h3><p class="muted">استخدم الصوت العربي المتاح في جهازك لنطق الذكر.</p><textarea id="tts-text" class="feature-textarea" rows="3">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</textarea><div class="feature-actions"><button class="btn btn-light btn-sm" id="tts-play">استمع</button><button class="btn btn-glass btn-sm" id="tts-stop">إيقاف</button></div><p id="tts-status" class="muted"></p>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div><h3>إحصائياتي</h3><div class="stats-list"><p>إجمالي التسبيحات <strong id="stat-tasbeeh">0</strong></p><p>جلسات استخدام الأدوات <strong id="stat-sessions">1</strong></p><p>الآيات المحفوظة <strong id="stat-bookmarks">0</strong></p></div><p class="muted">الإحصائيات محفوظة محلياً على جهازك.</p>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-bookmark"></i></div><h3>محفوظاتي</h3><p class="muted">احفظ نصوصاً قصيرة للرجوع إليها لاحقاً.</p><textarea id="bookmark-text" class="feature-textarea" rows="2" placeholder="اكتب آية أو تذكيراً..."></textarea><button class="btn btn-light btn-sm" id="bookmark-add">حفظ النص</button><div id="bookmark-list" class="bookmark-list"></div><h4>آيات القرآن المحفوظة</h4><div id="ayah-bookmarks-list" class="bookmark-list"></div>
+          </article>
+          <article class="feature-card glass-lg">
+            <div class="feature-icon"><i class="fa-solid fa-star-and-crescent"></i></div><h3>أسماء الله الحسنى</h3><p class="muted">مجموعة مختارة من الأسماء الحسنى للتأمل والتذكر.</p><div id="names-grid" class="names-grid"></div>
+          </article>
+        </div>
+        <article class="feature-card glass-lg feature-wide"><div class="feature-icon"><i class="fa-solid fa-list-music"></i></div><h3>قائمة «شغّل واستمع»</h3><p class="muted">أضف السور من شاشة القرآن وشغّلها بالترتيب. تُحفظ القائمة على جهازك.</p><div class="feature-actions"><button class="btn btn-light btn-sm" id="playlist-play">تشغيل القائمة</button><button class="btn btn-glass btn-sm" id="playlist-clear">مسح القائمة</button></div><div id="playlist-list" class="playlist-list"></div></article>
+        <article class="feature-card glass-lg feature-wide"><div class="feature-icon"><i class="fa-solid fa-chart-simple"></i></div><h3>إحصائيات القراءة</h3><div class="stats-list"><p>آيات تدربت عليها <strong id="stat-read-ayahs">0</strong></p><p>متوسط التشابه <strong id="stat-accuracy">—</strong></p><p>أيام النشاط المتتالية <strong id="stat-streak">0</strong></p></div></article>
+        <p class="feature-note"><i class="fa-solid fa-circle-info"></i> مواقيت الصلاة واتجاه القبلة يعتمدان على دقة إحداثيات الجهاز وطريقة الحساب. لا تعتمد على المتصفح وحده لتأكيد دخول الوقت الشرعي.</p>
+      </div>
+    </section>
+
+    <section class="page" id="about" data-page="about" aria-labelledby="about-title">
+      <div class="container narrow">
+        <article class="about-card glass-lg">
+          <div class="about-icon about-portrait" aria-hidden="true"><img src="assets/ahmad-fayez.jpg" alt="أحمد فايز الأحمد رحمه الله" loading="lazy"></div>
+          <span class="badge">صدقة جارية</span>
+          <h2 class="section-title" id="about-title">عن أنس أحمد</h2>
+          <p>أُنس أحمد — مساحة إيمانية للقرآن الكريم والأذكار، أُهدي ثوابها إلى روح المرحوم أحمد فايز الأحمد.</p>
+          <p class="muted">نسأل الله أن يتغمده بواسع رحمته، وأن يجعل هذا العمل نوراً وأجراً جارياً له.</p>
+          <div class="developer-credit"><span>تطوير محمد · ابن أخت المرحوم</span><span aria-hidden="true">✦</span><a href="https://www.instagram.com/xlb_me/" target="_blank" rel="noopener noreferrer" aria-label="حساب المطور محمد على إنستغرام"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @xlb_me</a></div>
+          <!-- ضع رابط حسابك الحقيقي على إنستقرام هنا -->
+          <a class="btn btn-glass" href="https://www.instagram.com/xlb_me/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i> المطوّر محمد · ابن أخت المرحوم @xlb_me
+          </a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="feature-modal" id="reciter-modal" hidden role="dialog" aria-modal="true" aria-labelledby="reciter-modal-title"><div class="feature-modal-card glass-lg"><div class="modal-heading"><h3 id="reciter-modal-title">اختر قارئك المفضل</h3><button type="button" class="icon-btn" data-close-modal="reciter-modal" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button></div><p class="muted">اختر قارئاً. قد تختلف إمكانية التشغيل آيةً بآية حسب مصدر الصوت.</p><div class="reciter-grid" id="reciter-grid"><p class="muted">جارٍ تحميل قائمة القرّاء…</p></div><div class="reciter-confirm-row"><span id="reciter-selection-status" class="muted">اختر الشيخ ثم اضغط اعتماد الاختيار.</span><button type="button" class="btn btn-light" id="reciter-confirm"><i class="fa-solid fa-check"></i> اعتماد الاختيار</button></div></div></div>
+  <div class="feature-modal" id="repeat-modal" hidden role="dialog" aria-modal="true" aria-labelledby="repeat-modal-title"><div class="feature-modal-card glass-lg"><div class="modal-heading"><h3 id="repeat-modal-title">تكرار الآية للحفظ</h3><button type="button" class="icon-btn" data-close-modal="repeat-modal" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button></div><label class="field-label">عدد التكرارات</label><select id="repeat-count" class="feature-select"><option value="3">3 مرات</option><option value="5">5 مرات</option><option value="10">10 مرات</option><option value="custom">عدد مخصص</option></select><input id="repeat-custom" class="feature-textarea" type="number" min="1" max="100" value="15" hidden><button class="btn btn-light" id="repeat-start">ابدأ التكرار</button></div></div>
+  <div class="feature-modal recitation-shell" id="recitation-modal" hidden role="dialog" aria-modal="true" aria-labelledby="recitation-title">
+    <div class="feature-modal-card glass-lg guided-recitation-card recitation-launch">
+      <div class="modal-heading"><h3 id="recitation-title">مصحف أُنس — رفيق التلاوة</h3><button type="button" class="icon-btn" data-close-modal="recitation-modal" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button></div>
+      <div class="mushaf-cover-scene" aria-hidden="true"><div class="mushaf-book"><div class="mushaf-cover"><span class="cover-bismillah">﷽</span><span class="cover-title">القرآن الكريم</span><span class="cover-subtitle">مصحف رفيق التلاوة</span><span class="cover-ornament">۞ ۞ ۞</span></div><div class="mushaf-pages"></div></div></div>
+      <p class="muted">اختر السورة لفتحها في صفحة مصحف. أثناء القراءة المباشرة ستتحرك العلامة مع الكلمات التي يتعرف عليها الميكروفون.</p>
+      <label class="field-label" for="guided-surah-select">اختر السورة</label><select id="guided-surah-select" class="feature-select"><option value="1">1 — الفاتحة</option></select>
+      <div class="feature-actions"><button class="btn btn-light" id="guided-open-page">افتح المصحف</button></div>
+      <div id="guided-reading-view" hidden>
+        <div class="mushaf-toolbar"><button class="btn btn-glass btn-sm" id="guided-back-cover">رجوع للسور</button><span id="guided-page-meta">سورة الفاتحة</span><label class="mushaf-font-control">حجم الخط <input id="guided-font-size" type="range" min="24" max="42" value="31"></label></div>
+        <div class="mushaf-page"><div class="mushaf-page-frame"><div class="mushaf-page-heading"><span id="guided-surah-name">سُورَةُ الْفَاتِحَة</span><small id="guided-surah-meta">مكية • 7 آيات</small></div><div id="guided-surah" class="guided-surah" dir="rtl" aria-live="polite"></div><div class="mushaf-page-footer">۞ <span id="guided-page-number">١</span> ۞</div></div></div>
+        <div class="recitation-legend"><span class="legend-green">مطابقة تقريبية</span><span class="legend-red">اختلاف محتمل</span><span class="legend-yellow">غير مؤكد</span></div>
+        <p id="guided-progress" class="muted">ابدأ القراءة لمتابعة الكلمات.</p><p id="recitation-status" class="muted">اضغط بدء القراءة واسمح باستخدام الميكروفون.</p><div id="recitation-heard" class="recitation-heard"></div>
+        <div class="feature-actions"><button class="btn btn-light" id="recitation-start">🎤 قراءة مباشرة</button><button class="btn btn-glass" id="recitation-stop">إيقاف</button><button class="btn btn-glass" id="guided-reset">إعادة البدء</button></div><p id="guided-feedback" class="muted" aria-live="polite">الألوان والنتائج مصدرها خدمة Nabr؛ الدقة تعتمد على إعدادات الخدمة والصوت، وهي أداة مساعدة تعليمية.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════ Footer ═════════ -->
+  <footer class="site-footer">
+    <!-- اللوجو في التذييل (56px) -->
+    <img class="footer-logo" src="assets/logo.png" width="56" height="56" alt="شعار أُنس أحمد" loading="lazy" decoding="async">
+    <p>© <span id="year">2026</span> أُنس أحمد — جميع الحقوق محفوظة</p>
+    <p class="muted">صدقة جارية على روح المرحوم أحمد فايز الأحمد</p><p class="muted">تصميم وتطوير <a href="https://www.instagram.com/xlb_me/" target="_blank" rel="noopener noreferrer">محمد · @xlb_me</a></p>
+  </footer>
+
+  <!-- ═════════ مشغل الصوت العائم ═════════ -->
+  <div class="player glass" id="player" role="region" aria-label="مشغل التلاوة" hidden>
+    <div class="player-info">
+      <strong id="player-surah">—</strong>
+      <span id="player-reciter" class="muted">—</span>
+    </div>
+    <div class="player-controls">
+      <button type="button" id="player-prev" class="icon-btn" aria-label="الآية السابقة"><i class="fa-solid fa-backward-step"></i></button>
+      <button type="button" id="player-play" class="play-btn" aria-label="تشغيل / إيقاف"><i class="fa-solid fa-play"></i></button>
+      <button type="button" id="player-next" class="icon-btn" aria-label="الآية التالية"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+    <div class="player-progress">
+      <span id="player-current" class="time">0:00</span>
+      <div class="seek" id="player-seek" role="slider" tabindex="0"
+           aria-label="شريط التقدم" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="seek-fill" id="player-fill"></div>
+      </div>
+      <span id="player-total" class="time">0:00</span>
+    </div>
+  </div>
+
+  <!-- ═════════ 4) المساعد الذكي (شاشة كاملة) ═════════ -->
+  <div class="ai-overlay" id="ai-overlay" role="dialog" aria-modal="true" aria-label="المساعد الذكي" hidden>
+    <div class="ai-topbar glass">
+      <div class="ai-id">
+        <span class="ai-avatar" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
+        <div>
+          <strong>المساعد الذكي</strong>
+          <span class="ai-status"><i class="dot" aria-hidden="true"></i> متصل</span>
+        </div>
+      </div>
+      <button type="button" class="icon-btn round" id="ai-close" aria-label="إغلاق المساعد">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="ai-messages" id="ai-messages" aria-live="polite"></div>
+
+    <div class="typing" id="ai-typing" hidden aria-label="المساعد يكتب">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="ai-form-wrap">
+      <div class="ai-form glass" id="ai-form">
+        <input type="text" id="ai-input" placeholder="اكتب سؤالك…" aria-label="رسالتك" autocomplete="off">
+        <button type="button" class="send-btn" id="ai-send" aria-label="إرسال">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════ Scripts ═════════
+       ترتيب التحميل مهم: تُبنى مساحة الأسماء في main.js أولاً،
+       ثم تُسجَّل بقية الملفات على مساحة window.Sakina.       -->
+  <script src="js/loader.js"></script>    <!-- شاشة التحميل -->
+  <script src="js/main.js"></script>      <!-- التنقل بين الأقسام -->
+  <script src="js/storage.js"></script>   <!-- التخزين المحلي -->
+  <script src="js/backup.js"></script> <!-- النسخ الاحتياطي والاستعادة -->
+  <script src="js/azkar-data.js"></script><!-- بيانات الأذكار (مضمّنة) -->
+  <script src="js/quran.js"></script>     <!-- القرآن + الصوت -->
+  <script src="js/adhkar.js"></script>    <!-- الأذكار + العدّاد -->
+  <script src="js/ai.js"></script>
+  <script src="js/advanced.js"></script>
+  <script src="js/quran-upgrades.js"></script>        <!-- ترقيات القرآن -->
+  <script src="js/site-polish.js"></script> <!-- الورد اليومي وتحسينات التجربة -->
+  <script src="js/pwa.js"></script> <!-- دعم التثبيت والتخزين الأساسي دون اتصال -->
+  <script src="js/phase-completion.js"></script> <!-- الورد اليومي والتثبيت وحالة الاتصال -->
+  <script src="js/nabr-recitation.js"></script>
+  <script src="js/guided-recitation.js"></script>
+  <script src="js/taj-adhikr.js"></script>
+  <script src="js/nawawi.js"></script>
+  <script src="js/nawawi-plan.js"></script>
+
+
+  <!-- تنقل سفلي محسّن للهاتف -->
+  <nav class="mobile-bottom-nav" aria-label="التنقل السريع">
+    <a href="#home" data-nav="home" class="mobile-nav-link is-current"><i class="fa-solid fa-house" aria-hidden="true"></i><span>الرئيسية</span></a>
+    <a href="#quran" data-nav="quran" class="mobile-nav-link"><i class="fa-solid fa-headphones" aria-hidden="true"></i><span>استماع</span></a>
+    <a href="#recitation" data-nav="recitation" class="mobile-nav-link"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i><span>قراءة</span></a>
+    <a href="#adhkar" data-nav="adhkar" class="mobile-nav-link"><i class="fa-solid fa-heart" aria-hidden="true"></i><span>الأذكار</span></a>
+    <button type="button" class="mobile-nav-link" id="open-mobile-more" aria-label="فتح بقية الأقسام"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i><span>المزيد</span></button>
+  </nav>
+
+<script>
+(function(){
+ var more=document.getElementById('open-mobile-more'), menu=document.getElementById('menu-toggle');
+ if(more&&menu)more.addEventListener('click',function(){menu.click();});
+})();
+</script>
+</body>
+</html>
+
+<script>
+(function(){
+ const links=document.querySelectorAll('.mobile-nav-link[data-nav]');
+ function sync(){const hash=(location.hash||'#home').slice(1);links.forEach(a=>a.classList.toggle('is-current',a.dataset.nav===hash));}
+ window.addEventListener('hashchange',sync);sync();
+ links.forEach(a=>a.addEventListener('click',()=>{links.forEach(x=>x.classList.remove('is-current'));a.classList.add('is-current')}));
+})();
+</script>
